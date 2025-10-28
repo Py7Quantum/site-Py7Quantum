@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Py7Quantum - Bots e Automação</title>
+    <style>
+        body {
+            font-family: "Poppins", sans-serif;
+            background: url('fundo-loja.gif') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        @keyframes neonGlow {
+            0% { text-shadow: 0 0 5px #00bfff, 0 0 10px #00bfff, 0 0 20px #00bfff; }
+            50% { text-shadow: 0 0 15px #00bfff, 0 0 30px #00bfff, 0 0 45px #00bfff; }
+            100% { text-shadow: 0 0 5px #00bfff, 0 0 10px #00bfff, 0 0 20px #00bfff; }
+        }
+
+        h1, h2, h3 {
+            animation: neonGlow 1.5s infinite alternate;
+        }
+
+        header {
+            font-size: 2.5em;
+            font-weight: bold;
+            letter-spacing: 2px;
+            padding: 25px;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 40px auto;
+        }
+
+        .cards-row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 20px 0;
+        }
+
+        .bot-card {
+            background-color: rgba(10, 10, 30, 0.85);
+            border: 2px solid #00bfff;
+            border-radius: 20px;
+            padding: 20px;
+            margin: 20px;
+            color: white;
+            text-align: center;
+            box-shadow: 0 0 20px #00bfff66;
+            backdrop-filter: blur(10px);
+            width: 320px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .bot-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 25px #00bfff;
+        }
+
+        .bot-card h2 {
+            color: #00bfff;
+            font-size: 1.8em;
+        }
+
+        .bot-card .descricao {
+            margin-top: 10px;
+            font-size: 1em;
+            color: #d0eaff;
+        }
+
+        .bot-card ul {
+            list-style: none;
+            padding-left: 0;
+            margin: 15px 0 0 0;
+            text-align: left;
+            display: inline-block;
+        }
+
+        .bot-card ul li {
+            margin: 8px 0;
+            font-size: 0.95em;
+        }
+
+        .bot-card .preco {
+            font-size: 1.2em;
+            margin: 10px 0;
+            color: #7ae0ff;
+        }
+
+        .discord-button {
+            background-color: #5865F2;
+            color: white;
+            padding: 12px 20px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-block;
+            transition: all 0.3s ease;
+        }
+
+        .discord-button:hover {
+            background-color: #4752C4;
+            transform: scale(1.05);
+        }
+
+        .instructions {
+            background-color: rgba(0, 30, 60, 0.6);
+            border: 2px solid #00bfff;
+            border-radius: 15px;
+            padding: 25px;
+            margin: 40px auto;
+            max-width: 900px;
+            text-align: center;
+            box-shadow: 0 0 15px #00bfff55;
+            backdrop-filter: blur(8px);
+        }
+
+        .instructions h3 {
+            color: #00bfff;
+            font-size: 1.6em;
+        }
+
+        .instructions ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .instructions li {
+            margin: 10px 0;
+            font-size: 1em;
+            line-height: 1.5;
+        }
+
+        .highlight {
+            color: #7ae0ff;
+            font-weight: bold;
+        }
+
+        footer {
+            margin-top: 40px;
+            padding: 20px;
+            font-size: 0.9em;
+            color: #b0caff;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>Py7Quantum - Bots Personalizados</header>
+
+    <div class="container">
+        <div class="cards-row">
+
+            <!-- BOT DE TICKET -->
+            <div class="bot-card">
+                <h2>🎫 Bot de Ticket</h2>
+                <p class="descricao">
+                    Automatize o suporte do seu servidor Discord com eficiência e estilo.  
+                    Crie, gerencie e resolva tickets com praticidade, tudo dentro do seu servidor.
+                </p>
+                <ul>
+                    <li>✅ Sistema de tickets personalizado</li>
+                    <li>🧾 Logs automáticos de atendimento</li>
+                    <li>🎚️ Painel de controle via comandos</li>
+                    <li>🔔 Notificações automáticas para a staff</li>
+                    <li>🕒 Fechamento automático e histórico salvo</li>
+                </ul>
+                <p class="preco">💰 <strong>R$ 25,00</strong></p>
+                <a href="https://discord.gg/6Bb6FeuKGr" class="discord-button">💳 Adquirir pelo Discord</a>
+            </div>
+
+            <!-- VIP EXCLUSIVO -->
+            <div class="bot-card">
+                <h2>💎 VIP Exclusivo</h2>
+                <p class="descricao">
+                    Torne sua experiência no Discord ainda mais premium com acesso exclusivo e suporte prioritário.
+                </p>
+                <ul>
+                    <li>🎯 Acesso a funcionalidades exclusivas</li>
+                    <li>⚡ Atendimento prioritário</li>
+                    <li>🔒 Recursos e comandos adicionais</li>
+                    <li>🛡️ Suporte personalizado 1:1</li>
+                    <li>🚀 Atualizações e melhorias constantes</li>
+                </ul>    
+                <p class="preco">💰 <strong>R$ 50,00</strong></p>
+                <a href="https://discord.gg/6Bb6FeuKGr" class="discord-button">💳 Adquirir pelo Discord</a>
+            </div>
+
+            <!-- BOT DE MODERAÇÃO (NOVO) -->
+            <div class="bot-card">
+                <h2>🛡️ Bot de Moderação</h2>
+                <p class="descricao">
+                    Mantenha seu servidor seguro, limpo e organizado.  
+                    Moderação rápida com sistema completo de punições e logs.
+                </p>
+                <ul>
+                    <li>🚨 Comandos: Mute, Ban, Kick</li>
+                    <li>⏱️ Mute Temporário Automático</li>
+                    <li>📜 Logs completos em canal dedicado</li>
+                    <li>👮 Permissões restritas apenas para staff</li>
+                    <li>📦 Respostas em EMBEDS premium</li>
+                </ul>
+                <p class="preco">💰 <strong>R$ 35,00</strong></p>
+                <a href="https://discord.gg/6Bb6FeuKGr" class="discord-button">💳 Adquirir pelo Discord</a>
+            </div>
+
+        </div>
+
+        <div class="instructions">
+            <h3>📌​ Como Aquirir seu Bot</h3>
+            <ul>
+                <li>➡️ Entre em nosso servidor do <span class="highlight">Discord</span> para tirar dúvidas e personalizar seu bot.</li>
+                <li>🧠 Cada bot pode ser ajustado de acordo com sua necessidade — funcionalidade, nome, tema e comandos.</li>
+                <li>➡️ Pagamento via <span class="highlight">PIX</span> disponível. A chave será fornecida no ticket de compra dentro do Discord.</li>
+                <li>🛠️ A instalação e configuração são feitas com suporte da nossa equipe.</li>
+                <li>🚀 Em até <span class="highlight">24 horas</span> após o pagamento, o bot é entregue e testado.</li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>© 2025 Py7Quantum | Todos os direitos reservados</footer>
+</body>
+</html>
