@@ -21,15 +21,38 @@
             100% { text-shadow: 0 0 5px #00bfff, 0 0 10px #00bfff, 0 0 20px #00bfff; }
         }
 
+        @keyframes neonPulse {
+            0% {
+                text-shadow: 0 0 5px #00eaff, 0 0 10px #00eaff, 0 0 20px #00eaff, 0 0 40px #00eaff;
+            }
+            50% {
+                text-shadow: 0 0 10px #00eaff, 0 0 20px #00eaff, 0 0 40px #00eaff, 0 0 80px #00eaff;
+            }
+            100% {
+                text-shadow: 0 0 5px #00eaff, 0 0 10px #00eaff, 0 0 20px #00eaff, 0 0 40px #00eaff;
+            }
+        }
+
+        @keyframes neonFlicker {
+            0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+                opacity: 1;
+            }
+            20%, 22%, 24%, 55% {
+                opacity: 0.4;
+            }
+        }
+
         h1, h2, h3 {
             animation: neonGlow 1.5s infinite alternate;
         }
 
         header {
-            font-size: 2.5em;
+            font-size: 4em;
             font-weight: bold;
-            letter-spacing: 2px;
-            padding: 25px;
+            letter-spacing: 4px;
+            margin-top: 40px;
+            color: #00eaff;
+            animation: neonPulse 1.8s infinite alternate, neonFlicker 3s infinite;
         }
 
         .container {
@@ -154,7 +177,7 @@
     </style>
 </head>
 <body>
-    <header>Py7Quantum - Bots Personalizados</header>
+    <header>PY7QUANTUM</header>
 
     <div class="container">
         <div class="cards-row">
