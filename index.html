@@ -21,15 +21,17 @@
             100% { text-shadow: 0 0 5px #00bfff, 0 0 10px #00bfff, 0 0 20px #00bfff; }
         }
 
-        h1, h2, h3 {
-            animation: neonGlow 1.5s infinite alternate;
-        }
-
         header {
             font-size: 2.5em;
             font-weight: bold;
             letter-spacing: 2px;
             padding: 25px;
+            color: #00bfff; /* neon azul */
+            animation: neonGlow 1.5s infinite alternate;
+        }
+
+        h2 {
+            color: white; /* títulos das caixas em branco */
         }
 
         .container {
@@ -63,11 +65,6 @@
         .bot-card:hover {
             transform: scale(1.05);
             box-shadow: 0 0 25px #00bfff;
-        }
-
-        .bot-card h2 {
-            color: #00bfff;
-            font-size: 1.8em;
         }
 
         .bot-card .descricao {
@@ -157,8 +154,27 @@
     <header>Py7Quantum - Bots Personalizados</header>
 
     <div class="container">
-        <div class="cards-row">
+        <!-- BOT DO SEU JEITO CENTRALIZADO -->
+        <div class="cards-row" style="justify-content: center; margin-bottom: 40px;">
+            <div class="bot-card">
+                <h2>🤖 Bot do Seu Jeito</h2>
+                <p class="descricao">
+                    Crie seu bot personalizado com tudo que você escolher: funcionalidades, cores, design, imagens, logs, comandos e muito mais!
+                </p>
+                <ul>
+                    <li>🎨 Escolha cores e tema</li>
+                    <li>🧩 Adicione funcionalidades personalizadas</li>
+                    <li>🖼️ Imagens e logos personalizáveis</li>
+                    <li>📝 Comandos e respostas do jeito que quiser</li>
+                    <li>⚡ Ajustes especiais sob demanda</li>
+                </ul>
+                <p class="preco">💰 <strong>R$ 70,00</strong></p>
+                <a href="https://discord.gg/6Bb6FeuKGr" class="discord-button">💳 Adquirir pelo Discord</a>
+            </div>
+        </div>
 
+        <!-- OUTROS 3 BOTS -->
+        <div class="cards-row">
             <!-- BOT DE TICKET -->
             <div class="bot-card">
                 <h2>🎫 Bot de Ticket</h2>
@@ -211,38 +227,9 @@
                 <p class="preco">💰 <strong>R$ 35,00</strong></p>
                 <a href="https://discord.gg/6Bb6FeuKGr" class="discord-button">💳 Adquirir pelo Discord</a>
             </div>
-
-            <!-- BOT DO SEU JEITO -->
-            <div class="bot-card">
-                <h2>🤖 Bot do Seu Jeito</h2>
-                <p class="descricao">
-                    Escolha tudo: funcionalidades, design, cores, comandos… Seu bot, do seu jeito!
-                </p>
-                <ul>
-                    <li>🎨 Personalize design e cores</li>
-                    <li>⚙️ Escolha comandos e funcionalidades</li>
-                    <li>💬 Mensagens automáticas personalizadas</li>
-                    <li>📊 Logs e alertas detalhados</li>
-                    <li>🔌 Integrações e extras avançados</li>
-                </ul>
-                <p class="preco">💰 <strong>R$ 60,00</strong></p>
-                <a href="https://discord.gg/6Bb6FeuKGr" class="discord-button">💳 Adquirir pelo Discord</a>
-            </div>
-
         </div>
 
         <div class="instructions">
             <h3>📌​ Como Aquirir seu Bot</h3>
             <ul>
-                <li>➡️ Entre em nosso servidor do <span class="highlight">Discord</span> para tirar dúvidas e personalizar seu bot.</li>
-                <li>🧠 Cada bot pode ser ajustado de acordo com sua necessidade — funcionalidade, nome, tema e comandos.</li>
-                <li>➡️ Pagamento via <span class="highlight">PIX</span> disponível. A chave será fornecida no ticket de compra dentro do Discord.</li>
-                <li>🛠️ A instalação e configuração são feitas com suporte da nossa equipe.</li>
-                <li>🚀 Em até <span class="highlight">24 horas</span> após o pagamento, o bot é entregue e testado.</li>
-            </ul>
-        </div>
-    </div>
-
-    <footer>© 2025 Py7Quantum | Todos os direitos reservados</footer>
-</body>
-</html>
+                <li>➡️ Entre em nosso servidor do <
